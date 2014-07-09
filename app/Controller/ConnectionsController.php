@@ -35,6 +35,8 @@ class ConnectionsController extends AppController {
             $this->set('name', Sanitize::html($data['my-name']));
             $this->set('country', Sanitize::html($data['my-country']));
             $this->set('message', Sanitize::html($data['my-message']));
+		} else {
+            $this->redirect('/');
 		}
 	}
 
