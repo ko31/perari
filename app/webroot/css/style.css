@@ -1,0 +1,116 @@
+/*
+We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+However, this blank file is available if you prefer
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito";
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-family: 'Nunito';
+  font-size: 50%;
+}
+
+#panel-one {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: 455px;
+  background: url(../img/bg.jpg) center top no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media only screen and (gumby-break) {
+  #panel-one {
+    margin-bottom: 50px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #panel-one {
+    /* height: 100%; */
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
+#panel-one .row {
+  position: relative;
+  z-index: 10;
+}
+#panel-one #pg-title h2 {
+  background: none;
+  color: #fff;
+  font-size: 5.25em;
+  padding: 10px 15px 10px 10px;
+}
+
+#panel-one #pg-title p {
+  color: #fff;
+  font-size: 24px;
+}
+.compliment-image {
+  text-align: center;
+}
+
+#panel-one #pg-title {
+  padding-top: 125px;
+}
+
+#panel-one h2 {
+  display: inline-block;
+  font-size: 68px;
+  font-size: 4.25rem;
+  padding: 0 4px;
+}
+
+#panel-one #user-info {
+  margin-top: 75px;
+  padding: 20px;
+  background: #fff;
+  filter:alpha(opacity=85);
+  -moz-opacity:0.85;
+  -khtml-opacity: 0.85;
+  opacity:0.85;
+}
+
+#panel-two h3 i {
+  color: #666;
+  font-size: 2.75rem;
+}
+
+#video-box {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.modal > .content {
+    width: 70%;
+    min-height: 70%;
+    max-height: 80%;
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    z-index: 2;
+    overflow: auto;
+}
+
+#subfoot {
+  text-align: center;
+}
+
+.answer-msg {
+  font-weight: bold;
+}
+
+#loading {
+  margin-top: 50px;
+}
