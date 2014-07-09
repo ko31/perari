@@ -37,7 +37,7 @@ class ConnectionsController extends AppController {
             $this->set('message', Sanitize::html($data['my-message']));
 		} else {
             $this->redirect('/');
-		}
+        }
 	}
 
 /**
@@ -78,6 +78,28 @@ class ConnectionsController extends AppController {
         }
 		if ($this->request->is('post')) {
 			if ($this->Connection->finish($this->request->data)) {
+                $this->autoRender = false;
+				echo "OK";
+                exit;
+            } else {
+                $this->autoRender = false;
+				echo "NG";
+                exit;
+            }
+		}
+	}
+
+/**
+ * close method
+ *
+ * @return void
+ */
+	public function close() {
+        if (!$this->request->is('ajax')) {
+            exit('Invalid access');
+        }
+		if ($this->request->is('post')) {
+			if ($this->Connection->close($this->request->data)) {
                 $this->autoRender = false;
 				echo "OK";
                 exit;

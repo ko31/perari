@@ -40,7 +40,7 @@
           <a class="toggle" gumby-trigger="#navbar-main-nav #main-nav" href="#"><i class="icon-menu"></i></a>
           <h1 class="four columns logo">
               <a href="/">
-                  PERARI
+                  <i class="icon-chat"></i>PERARI
               </a>
           </h1>
           <nav class="eight columns pull_right">
@@ -67,7 +67,7 @@
 
     <div class="wrapper shaded" id="subfoot">
         <section class="row">
-        <h3 class="action">Enjoy your PERARI time!</h3>
+        <h3 class="action">Enjoy your chat time!</h3>
         </section>
     </div>
 

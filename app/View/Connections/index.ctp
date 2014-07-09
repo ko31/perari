@@ -4,7 +4,7 @@
       <div class="row">
         <div class="six columns push_one" id="pg-title">
           <p>Free video chat service</p>
-          <h2>PERARI</h2>
+          <h2><i class="icon-chat"></i>PERARI</h2>
           <p>Anytime, Anywhere, with anyone</p>
         </div>
         <div class="six columns push_one" id="user-info">
@@ -261,7 +261,7 @@
                 <textarea class="input textarea" id="my-message" name="my-message" placeholder="Message input"></textarea>
                 </li>
                 <li class="field">
-                <div class="medium primary btn icon-left entypo icon-rocket" id="btn-send"><a href="#">Start!</a></div>
+                <div class="large primary btn icon-left entypo" id="btn-send"><a href="#">Start!</a></div>
                 </li>
             </ul>
             </form>
@@ -284,7 +284,7 @@
 	      </article>
       	
       	  <article class="four columns push_one">
-          <h3 class="free left-center"><i class="icon-chat"></i> P2P</h3>
+          <h3 class="free left-center"><i class="icon-switch"></i> P2P</h3>
 	        <p class="left-center"><article><p>PERARI is created in WebRTC. WebRTC is a P2P system. Communication takes place between users video and audio.</p></article></p>
 	      </article>
       	

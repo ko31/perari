@@ -29,6 +29,7 @@
 	Router::connect('/chat', array('controller' => 'connections', 'action' => 'chat', 'chat'));
 	Router::connect('/connections/progress', array('controller' => 'connections', 'action' => 'progress'));
 	Router::connect('/connections/finish', array('controller' => 'connections', 'action' => 'finish'));
+	Router::connect('/connections/close', array('controller' => 'connections', 'action' => 'close'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

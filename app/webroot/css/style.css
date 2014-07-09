@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 #panel-one #pg-title h2 {
   background: none;
   color: #fff;
-  font-size: 5.25em;
+  font-size: 4.75em;
   padding: 10px 15px 10px 10px;
 }
 
@@ -113,4 +113,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #loading {
   margin-top: 50px;
+}
+
+#btn-send {
+  width: 100%;
 }

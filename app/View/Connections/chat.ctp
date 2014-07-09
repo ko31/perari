@@ -5,7 +5,7 @@
       <div class="row" id="video-box">
           <div class="six columns">
               <div id="your_video">
-                  <video id="others-video" style="width:320px; height:240px;" autoplay controls poster="/img/other_poster.png"></video>
+                  <video id="others-video" style="width:400px; height:300px;" autoplay controls poster="/img/other_poster.png"></video>
                   <ul>
                   <li><i class="icon-user"></i><span id="other-name2"></span></li>
                       <li><i class="icon-globe"></i><span id="other-country2"></span></li>
@@ -15,7 +15,7 @@
           </div>
           <div class="six columns">
               <div id="my_video">
-                  <video id="my-video" style="width:320px; height:240px;" autoplay controls poster="/img/my_poster.png"></video>
+                  <video id="my-video" style="width:400px; height:300px;" autoplay controls poster="/img/my_poster.png"></video>
                   <ul>
                       <li><i class="icon-user"></i><span id="my-name"><?php echo $name;?></span></li>
                       <li><i class="icon-globe"></i><span id="my-country"><?php echo $country;?></span></li>
@@ -31,7 +31,7 @@
 
     <div class="modal" id="modal1">
         <div class="content">
-            <a class="close switch" gumby-trigger="|#modal1"><i class="icon-cancel" /></i></a>
+            <a id="modal1-cancel" class="close switch" gumby-trigger="|#modal1"><i class="icon-cancel" /></i></a>
             <div class="row" id="modal-search">
                 <div class="ten columns centered text-center">
                     <h2>Searching for a partner...</h2>

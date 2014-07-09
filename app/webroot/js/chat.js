@@ -85,8 +85,21 @@ var finish = function(id){
             peer_id: id,
         }
         }).done(function( msg ) {
-            alert( "finish done" );
             console.debug(msg);
+    });
+};
+
+var close = function(id){
+    $.ajax({
+        type: "POST",
+        url: "/connections/close",
+        data: {
+            peer_id: id,
+        }
+        }).done(function( msg ) {
+            console.debug(msg);
+            startProgress();
+            progressNew();
     });
 };
 
@@ -200,6 +213,11 @@ $(function(){
     $('#btn-ng').on(Gumby.click, function(e) {
         var id = $('#peer-id').val();
         progress(id, 'NG');
+    });
+    
+    $('#modal1-cancel').on(Gumby.click, function(e) {
+        var id = $('#peer-id').val();
+        close(id);
     });
 
 });

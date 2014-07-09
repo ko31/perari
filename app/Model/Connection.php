@@ -345,6 +345,24 @@ class Connection extends AppModel {
 	}
 
     // 
+    // ポップアップクローズ
+    // 
+	public function close($data) {
+
+        // 自分のステータスを更新する
+        $_me = $this->_getFromPeerId($data['peer_id']);
+        if (!$_me) {
+            return false;
+        }
+        $this->save(array(
+            'id'            => $_me['id'],
+            'status'        => MY_STATUS_NEW,
+        ));
+
+        return true;
+	}
+
+    // 
     // 接続終了
     // 
 	public function finish($data) {
