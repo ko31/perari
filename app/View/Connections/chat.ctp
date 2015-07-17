@@ -1,4 +1,4 @@
-<script src="//cdn.peerjs.com/0.3/peer.min.js"></script>
+<script src="/js/peer.min.js"></script>
 <script src="/js/chat.js"></script>
 
     <div class="wrapper">
