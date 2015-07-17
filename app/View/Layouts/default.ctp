@@ -75,7 +75,7 @@
       <footer class="row" id="credits">
       <div class="six columns">
           <p>
-          <span class="nobr">(c) 2014 <a href="http://go-sign.info/" target="_blank" title="gosign">gosign</a></span>
+          <span class="nobr">(c) 2014 <a href="http://go-sign.info/" target="_blank" title="gosign">gosign</a> (<a href="https://twitter.com/ko31">@ko31</a>)</span>
           </p>
       </div>
 <!--
