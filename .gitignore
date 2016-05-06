@@ -60,3 +60,5 @@ Thumbs.db
 /dev/*
 !/dev/
 
+# Cake Settings
+/app/Config/database.php
