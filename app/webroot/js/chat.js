@@ -2,7 +2,9 @@ navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia 
 
 var myTimer;
 var myStream;
-var peer = new Peer({key: '9rs7o9xm5jbdquxr'});
+//var peer = new Peer({key: '9rs7o9xm5jbdquxr'});
+//var peer = new Peer({host:'perari-peerserver.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 1})
+var peer = new Peer({host:'skyway.io', secure:true, port:443, key: '9d9b7976-b55a-40ad-b903-6b9043c8530b', debug: 1})
 
 var setOthersStream = function(stream){
 	$('#others-video').prop('src', URL.createObjectURL(stream));
@@ -23,7 +25,7 @@ var setMyStream = function(stream){
 
 var callOthersStream = function(other_peer_id){
     var call = peer.call(other_peer_id, myStream);
-    call.on('stream', setOthersStream);
+//    call.on('stream', setOthersStream);
 };
 
 var start = function(id){
@@ -182,7 +184,7 @@ var progressConnect = function(json){
 peer.on('open', function(id){
 	console.log("[open]"+id);
 	$('#peer-id').val(id);
-	$('#peer-id-label').text(id);
+//	$('#peer-id-label').text(id);
 });
 
 peer.on('call', function(call){

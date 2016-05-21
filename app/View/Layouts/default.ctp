@@ -23,8 +23,8 @@
 	?>
 
     <!--web-fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
 
 	<?php
 		echo $this->Html->script('modernizr-2.6.2.min');
@@ -44,19 +44,10 @@
               </a>
           </h1>
           <nav class="eight columns pull_right">
-          <!--
           <ul id="main-nav">
-              <li><a href=""><span>Customize </span><i class="icon-cog" title="Customize"></i></a></li>
-              <li><a href=""><span>Customize </span><i class="icon-cog" title="Customize"></i></a></li>
-              <li><a href=""><span>Customize </span><i class="icon-cog" title="Customize"></i></a></li>
-              <li><a href=""><span>Community </span><i class="icon-chat" title="community"></i></a></li>
               <li>
-              <p class="medium pretty default btn icon-github icon-left">
-              <a href="https://github.com/GumbyFramework/Gumby">GitHub</a>
-              </p>
               </li>
           </ul>
-          -->
           </nav>
       </div>
       </nav>
@@ -93,9 +84,9 @@
       </footer>
   </div>
 
-  <script gumby-debug gumby-touch="/bower_components/gumby/js/libs" src="http://gumbyframework.com/js/libs/gumby.min.js?1379449666"></script>
+  <script gumby-debug gumby-touch="/bower_components/gumby/js/libs" src="/js/libs/gumby.min.js"></script>
   
-  <script src="http://gumbyframework.com/js/build/events.min.js"></script>
+  <script src="/js/libs/events.min.js"></script>
 
   <!--[if lt IE 7 ]>
   <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
